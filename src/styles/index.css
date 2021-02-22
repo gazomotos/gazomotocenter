@@ -1,0 +1,49 @@
+:root {
+    /*variáves css*/
+    --color-laranja-escuro: #e17336;
+    --color-laranja: #eb8a57;
+    --color-laranja-claro: #f3a177;
+    --color-branco: #ffffff;
+    --color-marrom: #482918;
+}
+
+* {
+    padding:0;
+    margin:0;
+    vertical-align:baseline;
+    list-style:none;
+    border:0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.root {
+    max-width: 10px;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+[data-anime] {
+    opacity: 0;
+    transition: .5s;
+}
+
+[data-anime="botton"] {
+    transform: matrix(0, 0,-50px);
+}
+
+[data-anime="rigth"] {
+    transform: matrix(50px, 0, 0);
+}
+
+[data-anime="left"] {
+    transform: matrix(-50px, 0, 0);
+}
+
+[data-anime].animate {
+    opacity: 1;
+    transform: matrix(0px, 0px, 0px);
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}

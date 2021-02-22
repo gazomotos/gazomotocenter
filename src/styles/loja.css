@@ -1,0 +1,166 @@
+.container-loja {
+    background-color: var(--color-laranja-escuro);
+    height: 600px;
+}
+
+.container-loja .h2-loja {
+    color: #28180f;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.h2-lider {
+    text-align: center;
+    margin: 30px;
+    font-size: 2rem;
+}
+
+.produtos {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.parceiros, .vendas {
+    width: 500px;
+}
+
+.parceiros h3, .vendas h3 {
+    width: 100%;
+    color: #c1e136;
+    height: 50px;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.vendas h3 {
+    margin-top: -23.6px;
+}
+
+.produtos ul li {
+    color: #28180f;
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+
+.lista-parceiros, .lista-produtos {
+    margin-left: -100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.lista-produtos {
+    margin-left: -50px;
+}
+
+@media(max-width:1300px) {
+    .produtos {
+        max-width: 900px;
+    }
+
+    .parceiros h3, .vendas h3 {
+        font-size: 1.3rem;
+    }
+
+    .produtos ul li {
+        font-size: 1rem;
+    }
+    
+    .lista-produtos {
+        margin-left: -88px;
+    }
+}
+
+@media(max-width:1000px) {
+    .produtos {
+        max-width: 700px;
+    }
+
+    .parceiros h3, .vendas h3 {
+        font-size: 1rem;
+    }
+
+    .produtos ul li {
+        font-size: 0.8rem;
+    }
+    
+    .lista-produtos {
+        margin-left: -50px;
+    }
+
+    .lista-parceiros, .lista-produtos {
+        margin-left: -70px;
+    }
+
+    .container-loja {
+        height: 500px;
+    }
+}
+
+@media(max-width:800px) {
+    .produtos {
+        max-width: 550px;
+    }
+
+    .lista-produtos {
+        margin-left: -50px;
+    }
+
+    .lista-parceiros, .lista-produtos {
+        margin-left: -30px;
+    }
+}
+
+@media(max-width:550px) {
+    .produtos {
+        max-width: 450px;
+    }
+
+    .lista-produtos {
+        margin-left: 0;
+    }
+
+    .vendas h3 {
+        margin-top: 0;
+    }
+}
+
+@media(max-width:450px) {
+    .container-loja {
+        height: 400px;
+    }
+
+    .produtos {
+        max-width: 380px;
+    }
+
+    .container-loja .h2-loja {
+        font-size: 2rem;
+
+    }
+    
+    .h2-lider {
+        font-size: 1.5rem;
+    }
+
+    .parceiros h3, .vendas h3 {
+
+        font-size: .8rem;
+    }
+
+    .parceiros {
+        margin-right: 10px;
+    }
+
+    .produtos ul li {
+        font-size: .5rem;
+    }
+
+    .vendas h3 {
+        margin-top: -8.6px;
+    }
+}
